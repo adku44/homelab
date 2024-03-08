@@ -1,0 +1,17 @@
+---
+version: "2"
+services:
+  node-red:
+    image: nodered/node-red:3.0.2
+    container_name: node-red
+    ports:
+      - 1880:1880
+      - 5858:5858/udp
+    volumes:
+      - nodered-volume:/data
+    restart: unless-stopped
+    
+volumes:
+  nodered-volume:
+    name: nodered-volume
+    
