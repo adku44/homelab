@@ -9,8 +9,7 @@ services:
       - 5858:5858/udp
     volumes:
       - nodered-volume:/data
-    restart: unless-stopped
-    
+    restart: unless-stopped   
 volumes:
   nodered-volume:
     name: nodered-volume

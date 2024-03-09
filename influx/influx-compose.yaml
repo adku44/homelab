@@ -1,0 +1,15 @@
+---
+version: "2"
+services:
+  influxdb:
+    image: influxdb:1.8
+    container_name: influxdb_container
+    restart: unless-stopped
+    ports:
+      - 8086:8086
+    volumes:
+      - influxdb-volume:/var/lib/influxdb  
+        restart: unless-stopped
+volumes:
+  influxdb-volume:
+    name: influxdb-volume	
