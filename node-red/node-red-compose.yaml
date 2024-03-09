@@ -12,5 +12,5 @@ services:
       - nodered-volume:/data
 volumes:
   nodered-volume:
-    name: nodered-volume
+    name: nodered
     

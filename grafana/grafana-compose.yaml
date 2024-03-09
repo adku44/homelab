@@ -3,7 +3,7 @@ version: "2"
 services:
   grafana:
     image: grafana/grafana:10.4.0
-    container_name: grafana_container
+    container_name: grafana
     restart: unless-stopped
     ports:
       - 3000:3000
@@ -11,4 +11,4 @@ services:
       - grafana-volume:/var/lib/grafana
 volumes:
   grafana-volume:
-    name: grafana-volume	
+    name: grafana	
