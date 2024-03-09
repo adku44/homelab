@@ -9,7 +9,7 @@ services:
       - 8086:8086
     volumes:
       - influxdb-volume:/var/lib/influxdb  
-        restart: unless-stopped
+    restart: unless-stopped
 volumes:
   influxdb-volume:
     name: influxdb-volume	
